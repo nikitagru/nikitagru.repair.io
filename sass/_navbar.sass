@@ -1,0 +1,40 @@
+$main: #ffd200
+    
+.navbar
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+.navbar-number
+    display: flex
+    align-self: center
+    justify-content: flex-end
+    height: 100%
+    & p
+        margin: 0
+        +light
+        font-size: 0.7rem
+        text-align: right
+        & span
+            +bold
+            font-size: 0.9rem
+
+.number-main
+    align-self: center
+    margin-right: 2vh
+
+.number-button
+    display: flex
+    align-self: center
+    height: 60%
+
+.navbar-button__main
+    +bold
+    font-weight: bold
+    font-size: 0.7rem
+    background-color: $main
+    border-radius: 10px
+    border: none
+    padding: 0 30px
+
+
+
