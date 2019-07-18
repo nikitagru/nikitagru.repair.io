@@ -109,4 +109,47 @@ body {
     font-size: 0.7rem;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .container {
+    width: 350px;
+  }
+  .number-main {
+    display: none;
+  }
+  .navbar {
+    height: 50px;
+  }
+  .navbar-logo img {
+    height: 60%;
+    width: 60%;
+  }
+}
+
+.first-section {
+  background-color: #f5f5f5;
+}
+
+.first_section__main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding-top: 50px;
+}
+
+.left-title {
+  font-family: 'Museo Sans 700 Bold', sans-serif;
+}
+
+.left-title__main {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.left-title__submain {
+  font-size: 1.2rem;
+  margin-top: -15px;
+  margin-bottom: 90px;
+}
 /*# sourceMappingURL=style.css.map */
