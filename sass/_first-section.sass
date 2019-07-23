@@ -1,10 +1,12 @@
 .first-section
     background-color: #f5f5f5
+    width: 100%
     
 .first_section__main
-    display: grid
-    grid-template-columns: 1fr 1fr
+    display: flex
+    flex-wrap: 400px
     padding-top: 50px
+    padding-bottom: 50px
 
 .left-title
     +bold
@@ -18,7 +20,35 @@
     margin-top: -15px
     margin-bottom: 90px
 
+.list
+    &-first
+        display: flex
+        font-size: 1rem
+        +light
+        &__text
+            padding-top: 10px
+            padding-left: 40px
+    &-second
+        display: flex
+        font-size: 1rem
+        +light
+        margin-top: 20px
+        &__text
+            padding-left: 40px
+    &-third
+        display: flex
+        font-size: 1rem
+        +light
+        margin-top: 20px
+        &__text
+            padding-left: 40px
 
+.first_section
+    &-left
+        width: 50%
+    &-right
+        width: 50%
+    //box-shadow: 7px 0 10px rgba(0, 0, 0, .1)
         
             
 

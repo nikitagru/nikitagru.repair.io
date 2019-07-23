@@ -1,9 +1,8 @@
-//NavBar Media Queries
-
 @media screen and (max-width: 768px)
     .container
         width: 740px  
 
+    //NavBar
     .navbar-logo
         & img
             width: 30%
@@ -19,12 +18,40 @@
     
     .navbar-button__main
         padding: 0 20px
-        font-size: 0.7rem 
+        font-size: 0.7rem
+
+    //First Section
+    .first_section
+        &-right
+            //box-shadow: 1px 0 10px rgba(0, 0, 0, .1)
+            min-width: 100% 
+            & img
+                width: 100%
+        &-left
+            min-width: 100%
+
+    .first_section__main
+        flex-direction: column
+
+       
+
+    .left-title
+        text-align: center
+
+    .left-list
+        display: flex
+        margin-bottom: 30px
+    
+    .list-first
+        margin-top: 20px
+         
+            
 
 @media screen and (max-width: 420px)
     .container
         width: 350px
 
+    //NavBar
     .number-main
         display: none
 
@@ -35,5 +62,18 @@
         & img
             height: 60%
             width: 60%
+
+    //First Section
+
+    .first-section
+        margin-top: 7px
+    
+    .left-list
+        display: flex
+        flex-direction: column
+
+
+
+
 
             
