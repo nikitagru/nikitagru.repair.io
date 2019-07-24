@@ -170,11 +170,16 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  position: relative;
 }
 
 .second-section__img img {
-  width: 75%;
+  width: 100%;
+}
+
+.second-section__form {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 90px;
 }
 
 .form-main {
@@ -185,8 +190,110 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
-  margin-left: 19vw;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  margin-top: 40px;
+}
+
+.form__title {
+  font-family: 'Museo Sans 700 Bold', sans-serif;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.form__subtitle {
+  font-family: 'Museo Sans 300 Light', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+.form__contacts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  font-family: 'Museo Sans 300 Light', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.contacts__tel {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.contacts__tel p span {
+  font-family: 'Museo Sans 700 Bold', sans-serif;
+}
+
+.project__name {
+  width: 200px;
+  height: 60px;
+  border: solid #b0b0b0;
+  border-radius: 10px;
+  border-width: 1px;
+  padding: 0 20px;
+  margin-right: 5px;
+}
+
+.project__name::-webkit-input-placeholder {
+  font-family: 'Museo Sans 300 Light', sans-serif;
+  font-size: 1.1rem;
+}
+
+.project__name:-ms-input-placeholder {
+  font-family: 'Museo Sans 300 Light', sans-serif;
+  font-size: 1.1rem;
+}
+
+.project__name::-ms-input-placeholder {
+  font-family: 'Museo Sans 300 Light', sans-serif;
+  font-size: 1.1rem;
+}
+
+.project__name::placeholder {
+  font-family: 'Museo Sans 300 Light', sans-serif;
+  font-size: 1.1rem;
+}
+
+.project__tel {
+  width: 200px;
+  height: 60px;
+  border: solid #b0b0b0;
+  border-radius: 10px;
+  border-width: 1px;
+  padding: 0 20px;
+}
+
+.project__tel::-webkit-input-placeholder {
+  font-family: 'Museo Sans 300 Light', sans-serif;
+  font-size: 1.1rem;
+}
+
+.project__tel:-ms-input-placeholder {
+  font-family: 'Museo Sans 300 Light', sans-serif;
+  font-size: 1.1rem;
+}
+
+.project__tel::-ms-input-placeholder {
+  font-family: 'Museo Sans 300 Light', sans-serif;
+  font-size: 1.1rem;
+}
+
+.project__tel::placeholder {
+  font-family: 'Museo Sans 300 Light', sans-serif;
+  font-size: 1.1rem;
+}
+
+.project__button {
+  background-color: #ffd200;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 22px 40px;
+  font-family: 'Museo Sans 700 Bold', sans-serif;
+  font-size: 1rem;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -236,6 +343,24 @@ body {
   .list-first {
     margin-top: 20px;
   }
+  .second-section {
+    display: block;
+    width: 740px;
+    margin: auto;
+  }
+  .second-section__img {
+    display: none;
+  }
+  .second-section__form {
+    width: 66vw;
+    margin: auto;
+  }
+  .form__title {
+    text-align: center;
+  }
+  .form__subtitle {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -263,6 +388,19 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .second-section {
+    width: 350px;
+  }
+  .second-section__form {
+    width: auto;
+  }
+  .project__name {
+    width: 305px;
+    margin: 0 0 10px 0;
+  }
+  .project__tel {
+    width: 305px;
   }
 }
 /*# sourceMappingURL=style.css.map */
