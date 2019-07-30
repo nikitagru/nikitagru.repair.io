@@ -296,6 +296,90 @@ body {
   margin-top: 30px;
 }
 
+.third-section {
+  margin-top: -6px;
+}
+
+.third-section__backgr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.third-section__main {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.third-section__title {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Museo Sans 700 Bold', sans-serif;
+  line-height: 1.5;
+}
+
+.third-section__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.third-section__button {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.colorbox-1 {
+  background-image: url(../img/third-section-back.jpg);
+  height: 740px;
+}
+
+.colorbox-2 {
+  height: 740px;
+  background-color: #f5f5f5;
+}
+
+.slider-img-2 {
+  margin: 0 20px;
+}
+
+.left-arrow {
+  background-image: url(../img/left-arrow.png);
+  background-repeat: no-repeat;
+  height: 19px;
+  width: 45px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.right-arrow {
+  background-image: url(../img/right-arrow.png);
+  background-repeat: no-repeat;
+  height: 19px;
+  width: 45px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-left: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     width: 740px;
@@ -361,6 +445,15 @@ body {
   .form__subtitle {
     text-align: center;
   }
+  .third-section {
+    width: 100%;
+  }
+  .slider-img-1 {
+    display: none;
+  }
+  .slider-img-2 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -401,6 +494,26 @@ body {
   }
   .project__tel {
     width: 305px;
+  }
+  .third-section__backgr {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .third-section__slider {
+    width: 320px;
+    margin: auto;
+  }
+  .colorbox-1 {
+    display: none;
+  }
+  .slider-img-1 {
+    display: none;
+  }
+  .slider-img-2 {
+    display: none;
+  }
+  .slider-img-3 img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
